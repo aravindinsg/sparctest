@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: 'Varela Round', sans-serif;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: #06283D; /*If image doesn't load for any reason*/
+}
+
+header{
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content:left;
+    background-color: #06283D90;
+    padding-right: 40px;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#brand:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#brand a {
+    margin: 0px 40px;
+    color: red;
+    font-size: 30px;;
+}
+
+header ul {
+    font-size: 15px;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul a {
+    color: #D6E4E5;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    border: 1px solid #D6E4E5;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header ul a {
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 1s !important;
+}
+
+header ul li:hover {
+    transform: scale(1.07);
+    transition: 0.3s;
+    color: #39A2DB;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/*Image Carousel*/
+.mySlides {
+    display: none;
+}
+.mySlides img{
+    vertical-align: middle;
+    border-radius: 10px;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+    z-index: 4;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Fading animation */
+.fade_ {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.slides-wrapper{
+    position: absolute;
+}
+.slideshow-text{
+    color:white;
+    position: relative;
+    padding-left: 10px;
+    background-color: #D6E4E540;
+    width:50%;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 400px;
+}
+.slideshow-text h1{
+    font-size: 50px;
+}
+
+/*Menu section*/
+.menu-gallery{
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+}
+.menu-gallery h4{
+    padding: 50px;
+    width:50px;
+    height: 90%;
+
+    width:100%;
+    color:white;
+}
+
+.class-booking-form{
+    background-image: url("images/academy.svg");
+}
+header img{
+    height:60px;
+}
+.menu-box:hover{
+    cursor: pointer;
+}
+/*Footer Section*/
+footer{
+    text-align: center;
+    background-color: #000;
+    color:white;
+    padding:20px;
+    bottom: 0;
+}
+.social-col h3{
+    display: inline;
+    margin-right: 30px;
+}
+.social-col a{
+    color: white;
+}
+.social-col, .about-us-row{
+    border: #06283D solid 1px;
+    padding: 2px;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fa-brands{
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fa-brands:hover{
+    color:#39A2DB;
+}
+.about-col-1, .about-col-2, .about-col-3, .contact-col{
+    padding-left: 40px;
+    text-align: left;
+}
+.value-list li{
+    list-style-type:none;
+}
+.value-list{
+    padding-left: 10px;
+}
+#study-img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+    .slideshow-text h3{
+        font-size: 10px;
+    }
+    .slideshow-text h1{
+        font-size: 15px;
+    }
+    .slideshow-text{
+        margin-bottom: 100px;
+    }
+    .prev, .next,.text {
+        font-size: 11px
+    }
+    .dot{
+        height: 10px;
+        width: 10px;
+    }
+    .prev, .next,.text{
+        font-size: 14px
+    }
+    .prev, .next {
+        background-color: rgba(0,0,0,0.8);
+        padding: 5px;
+    }
+    .prev{
+        margin-left: -18px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .next{
+        margin-right: -18px;
+        border-radius: 0px 5px 5px 0px;
+    }
+    header{
+        padding: 0;
+    }
+    header ul a{
+        padding: 5px;
+        padding: 5px;
+        transition: 1s;
+    }
+    header li{
+        font-size: 10px;
+        padding-left: 3px;
+        text-align: center;
+    }
+    #brand a{
+        margin-right:5px;
+    }
+    footer{
+        padding:10px;
+    }
+    .social-col, .about-us-row{
+        border: none;
+        padding: 0;
+        border-radius: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .social-col h3{
+        margin: 0;
+    }
+    footer h5{
+        text-decoration: underline #39A2DB;
+    }
+}
