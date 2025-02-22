@@ -1,2 +1,0 @@
-# sparctest
-sparcstonz-website-test
